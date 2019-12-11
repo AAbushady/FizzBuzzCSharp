@@ -6,32 +6,31 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-
             const int LoopAmount = 100;
 
-            for (int cnt = 1; cnt <= LoopAmount; cnt++)
+            for (int counter = 1; counter <= LoopAmount; counter++)
             {
-                FizzBuzzer(cnt);
+                FizzBuzzer(counter);
             }
         }
 
-        public static void FizzBuzzer(int cnt)
+        public static void FizzBuzzer(int counter)
         {
-            if (cnt % 3 == 0 && cnt % 5 == 0)
+            if (counter % 3 == 0 && counter % 5 == 0)
             {
                 Console.WriteLine("FizzBuzz");
             }
-            else if (cnt % 3 == 0)
+            else if (counter % 3 == 0)
             {
                 Console.WriteLine("Fizz");
             }
-            else if (cnt % 5 == 0)
+            else if (counter % 5 == 0)
             {
                 Console.WriteLine("Buzz");
             }
             else
             {
-                Console.WriteLine(cnt);
+                Console.WriteLine(counter);
             }
         }
     }
